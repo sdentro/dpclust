@@ -413,7 +413,7 @@ RunDP <- function(analysis_type, run_params, sample_params, advanced_params, out
     .remove_file(file.path(outdir, rdata_file_name))
     
     # nD method files
-    .remove_file(file.path(outdir, paste(samplename, "_DP_and cluster_info_0.01.txt", sep="")))
+    .remove_file(file.path(outdir, paste(samplename, "_DP_and_cluster_info_0.01.txt", sep="")))
     .remove_file(file.path(outdir, paste(samplename, "_confInts_0.01.txt", sep="")))
     .remove_file(file.path(outdir, paste(samplename, "_localHighConfidenceMultidimensionalOptima_0.01.txt", sep="")))
     .remove_file(file.path(outdir, paste(samplename, "_localMultidimensionalOptima_0.01.txt", sep="")))
