@@ -721,7 +721,7 @@ get_cnas_cluster_probs = function(cndata, snv_assignment_likelihoods, cluster_co
           0
         } else {
           # Combine p-values using fishers' method
-          pchisq(-2 * sum(log(pseudo_snvs[,j])), df=length(pseudo_snvs[,j]), lower.tail=F)
+          pchisq(-2 * sum(log(pseudo_snvs[,j])), df=2*length(pseudo_snvs[,j]), lower.tail=F)
         }
       })
     }
